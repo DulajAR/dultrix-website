@@ -1,0 +1,174 @@
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+  --muted: #4b5563;
+  --card-border: #e5e7eb;
+  --accent: #2563eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+}
+
+.home-page {
+  min-height: 100vh;
+}
+
+.site-nav {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--card-border);
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.25rem;
+  border-top: 1px solid var(--card-border);
+  color: var(--muted);
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5.5rem 1.5rem;
+  color: #ffffff;
+  background: linear-gradient(90deg, #2563eb 0%, #4f46e5 100%);
+}
+
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  margin-top: 1rem;
+  max-width: 42rem;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+}
+
+.hero-actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.75rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+
+.btn-primary-light {
+  background: #ffffff;
+  color: #2563eb;
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.section {
+  padding: 5rem 1.5rem;
+}
+
+.section-services,
+.section-portfolio {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.section-portfolio {
+  background: #f8fafc;
+  max-width: none;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(1.7rem, 3.5vw, 2rem);
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.section-title-light {
+  color: #ffffff;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffff;
+  padding: 1.4rem;
+  border: 1px solid var(--card-border);
+  border-radius: 0.85rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.card-text {
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+.section-cta {
+  background: #2563eb;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cta-text {
+  margin-top: 0.75rem;
+}
+
+.cta-button {
+  margin-top: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
