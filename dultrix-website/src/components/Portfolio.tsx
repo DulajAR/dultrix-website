@@ -6,7 +6,7 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <section className="section section-portfolio">
+    <section className="section section-portfolio" id="portfolio">
       <h2 className="section-title">
         Our Portfolio
       </h2>

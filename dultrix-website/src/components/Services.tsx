@@ -6,7 +6,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="section section-services">
+    <section className="section section-services" id="services">
       <h2 className="section-title">Our Services</h2>
 
       <div className="card-grid">

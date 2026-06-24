@@ -1,6 +1,6 @@
 export default function CTA() {
   return (
-    <section className="section section-cta">
+    <section className="section section-cta" id="contact">
       <h2 className="section-title section-title-light">
         Ready to build your next big idea?
       </h2>
@@ -9,7 +9,7 @@ export default function CTA() {
         Let’s work together and create something amazing.
       </p>
 
-      <button className="btn btn-primary-light cta-button">
+      <button className="btn btn-primary cta-button">
         Contact Us
       </button>
     </section>
