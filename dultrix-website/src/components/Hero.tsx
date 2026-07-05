@@ -59,7 +59,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        
 
         <a className="scroll-indicator" href="#contact" aria-label="Scroll to the contact section">
           <span className="scroll-indicator-text">Scroll Down</span>
