@@ -44,6 +44,8 @@ export function Navbar() {
     setMenuOpen(false);
   };
 
+  
+
   return (
     <header className={`site-header${isHidden && !menuOpen ? " site-header-hidden" : ""}`}>
       <div className="announcement-bar">
